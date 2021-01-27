@@ -15,3 +15,4 @@ model <- leaps::regsubsets(max_formula,
 set.seed(20141020)
 stability_paths <- get_stability_paths(model, data, reps = 1000)
 stability_paths
+plot_stability_paths(stability_paths)
